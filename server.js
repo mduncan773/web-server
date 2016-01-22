@@ -17,7 +17,7 @@ var middleware = {
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAuthentication, function(req, res){
-    res.send('About us');
+    res.send('About us!');
 });
 
 //set up web server on index.html in public folder.   
